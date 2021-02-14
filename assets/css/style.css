@@ -200,8 +200,21 @@ body {
   *  object-project設定
   ****************************************************************************/
 /********************** top css **********************/
+.top {
+  background-image: url("./../images/top1.jpg");
+}
+
 .top__container {
   height: 827px;
+  background-image: url("./../images/mainVisual-overlay@2x.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.top .top__header {
+  padding: 0;
+  margin: 0;
 }
 
 @media (min-width: 900px) {
@@ -212,6 +225,8 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding-top: 50px;
+    margin: 0 50px;
   }
 }
 
@@ -248,8 +263,7 @@ body {
 }
 
 .top .top__header-list-item {
-  padding: 30px;
-  border-bottom: 1px solid #fff;
+  padding: 20px;
 }
 
 .top .top__header-list-item a {
@@ -266,6 +280,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20px 30px;
+  background-color: #fff;
 }
 
 @media (min-width: 900px) {
@@ -890,10 +905,13 @@ body {
   background-repeat: no-repeat;
   width: 120px;
   height: 90px;
+  margin: 0 auto 30px;
 }
 
-.footer__content-img img {
-  width: 100%;
+@media (min-width: 581px) {
+  .footer__content-img {
+    margin: 0;
+  }
 }
 
 .footer__content-copyright {
