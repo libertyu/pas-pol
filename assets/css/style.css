@@ -264,6 +264,13 @@ body {
 
 .top .top__header-list-item {
   padding: 20px;
+  border-bottom: 1px solid #fff;
+}
+
+@media (min-width: 900px) {
+  .top .top__header-list-item {
+    border-bottom: 0;
+  }
 }
 
 .top .top__header-list-item a {
